@@ -1,5 +1,10 @@
-@import url(styles.css);
-
+:root {
+    --primario: #4B96E2;
+    --segundo: #73ADE8;
+    --tercero: #C2DBF5;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
 .header-info {
     background: var(--segundo);
     text-align: right;
@@ -93,9 +98,14 @@
 }
 
 .navbar-toggle-btn {
-    background-color: transparent;;
+    background-color: transparent;
     border: none;
     cursor: pointer;
+    display: none;
+}
+
+.navbar-mobile {
+    display: none;
 }
 
 @keyframes moveText {
@@ -129,6 +139,13 @@
         z-index: 1;
     }
 
+    .nav-link-mobile {
+        margin-left: 40px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-top: 5px;
+    }
+
     .nav-list-mobile {
         list-style: none;
         padding: 20px;
@@ -138,12 +155,6 @@
     .nav-list-mobile a {
         color: var(--negro);
         position: relative;
-    }
-
-    .navbar-link-mobile {
-        margin: 40px;
-        font-size: 1.1rem;
-        font-weight: 600;
     }
 
     .nav-link-mobile a::after {
@@ -161,4 +172,20 @@
     .nav-link-mobile:hover a::after {
         opacity: 1;
     }
+
+    .navbar-toggle-btn{
+        display: block;
+        margin: 0;
+    }
+
+    .navbar-toggle-btn img {
+        height: 28px;
+        margin: 0 10px;
+    }
+} 
+
+@media only screen and (max-width: 510px) {
+    .search-icon{
+        display: none;
+    }   
 }
