@@ -1,7 +1,7 @@
 document.addEventListener ("DOMContentLoaded", () => {
     // sleccion de elementos DOM
     const toggleButton = document.querySelector(".navbar-toggle-btn")
-    const mobileMenu = document.querySelector(".nav-list-mobile")
+    const mobileMenu = document.querySelector(".navbar-mobile")
     
     // funciones de si o no se usa el botn de menu
     const toggleMenu = () => {
