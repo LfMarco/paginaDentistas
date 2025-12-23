@@ -1,5 +1,5 @@
 document.addEventListener ("DOMContentLoaded", () => {
-    // sleccion de elementos DOM
+    // seleccion de elementos DOM
     const toggleButton = document.querySelector(".navbar-toggle-btn")
     const mobileMenu = document.querySelector(".navbar-mobile")
     
